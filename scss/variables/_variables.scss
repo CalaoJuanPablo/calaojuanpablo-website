@@ -1,0 +1,56 @@
+/*
+  Variables
+*/
+
+// Colors
+
+/* Gray Scale */
+$color-black: #000000;
+$color-dark: #212121;
+$color-gray: #575757;
+$color-light-gray: #b3b3b3;
+$color-light: #cccccc;
+$color-white: #ffffff;
+
+/* Main colors */
+$color-primary: #ffdd5e;
+$color-secondary: #82e1cb;
+
+$color-link-p: $color-primary;
+$color-link-s: $color-primary;
+
+/* Utility colors */
+$color-error: #ef4444;
+$color-warning: #fbbf24;
+$color-info: #0ea5e9;
+$color-success: #10b981;
+
+// Typographic
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+$typographic-google-fonts-main-font-family: 'DM Sans';
+$typographic-google-fonts-title-font-family: 'DM Sans';
+
+$typographic-generic-font-families: system-ui, -apple-system, Segoe UI, Roboto,
+  Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue,
+  Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+$typographic-main-font-family: $typographic-google-fonts-main-font-family,
+  $typographic-generic-font-families;
+$typographic-title-font-family: $typographic-google-fonts-title-font-family,
+  $typographic-generic-font-families;
+
+$typographic-root-font-size: 100;
+$typographic-base-font-size: 16px;
+$typographic-small-font-size: 14px;
+
+
+$typographic-base-line-height: 1.5;
+
+$typographic-base-font-color: $color-black;
+$typographic-link-p-font-color: $color-link-p;
+$typographic-link-s-font-color: $color-link-s;
+
+$typographic-leading: round(
+  18 * ($typographic-root-font-size / 100) * $typographic-base-line-height
+);
