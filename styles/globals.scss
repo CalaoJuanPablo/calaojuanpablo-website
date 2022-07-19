@@ -39,3 +39,24 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+.section h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.section p {
+  margin-bottom: 24px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: $main-color;
+  color: $dark-color;
+  text-decoration: none;
+  text-align: center;
+}
