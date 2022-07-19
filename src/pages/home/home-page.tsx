@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaPenNib, FaCode } from 'react-icons/fa'
 import styles from 'styles/home-page.module.scss'
 
 export const HomePage = () => (
@@ -27,6 +28,94 @@ export const HomePage = () => (
           <Link href='/about'>
             <a className='button'>more about me</a>
           </Link>
+        </div>
+      </div>
+    </section>
+    <section id='what-i-do' className='section'>
+      <div className='container'>
+        <h1>what i do</h1>
+        <div className='grid column-2'>
+          <div className='skill-card'>
+            <div className='icon'>
+              <FaPenNib />
+            </div>
+            <h3>web design</h3>
+            <span className='border'></span>
+            <p>I love clean, minimal and beautiful websites</p>
+          </div>
+          <div className='skill-card'>
+            <div className='icon'>
+              <FaCode />
+            </div>
+            <h3>web development</h3>
+            <span className='border'></span>
+            <p>I focus in simplicity, reliability and performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id='more-about-me' className='section'>
+      <div className='container'>
+        <h1>want to know more about me?</h1>
+        <ul>
+          <li>
+            You can check my social media (
+            <a
+              href='https://twitter.com/CalaoJuanPablo'
+              target='_blank'
+              rel='noreferrer'
+            >
+              twitter
+            </a>
+            ,
+            <a
+              href='https://www.linkedin.com/in/calaojuanpablo/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              linkedin
+            </a>
+            ,
+            <a
+              href='https://www.instagram.com/calaojuanpablo/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              instagram
+            </a>
+            ).
+          </li>
+          <li>
+            Some of my work and interests in code on
+            <a
+              href='https://github.com/CalaoJuanPablo'
+              target='_blank'
+              rel='noreferrer'
+            >
+              github
+            </a>
+            .
+          </li>
+          <li>
+            Read my personal{' '}
+            <Link href='.blog'>
+              <a>blog</a>
+            </Link>{' '}
+            (sorry for non spanish speakers 😔. For now it will only be in
+            spanish).
+          </li>
+          <li>
+            If you want to work with me, you can send an email to
+            <a href='mailto:me@calaojuanpablo.com'></a>
+          </li>
+        </ul>
+        <div className='buttons'>
+          <a href='#' className='button'>
+            contact me
+          </a>
+          <a href='#' className='button'>
+            go to my blog
+          </a>
         </div>
       </div>
     </section>
