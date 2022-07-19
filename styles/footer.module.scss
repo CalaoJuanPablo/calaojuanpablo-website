@@ -1,0 +1,52 @@
+@import './variables';
+@import './mixins/breakpoints';
+
+.footer {
+  padding: 25px 0;
+}
+
+.handle {
+  color: $medium-light-color;
+  text-align: center;
+}
+
+.footer-info-container {
+  text-align: center;
+}
+
+.footer-logo-link {
+  display: inline-block;
+}
+
+.footer-logo-figure {
+  height: 70px;
+  width: 70px;
+  margin: 0 auto;
+}
+
+.footer-bottom-info {
+  padding-top: 42px;
+  margin: 25px -20px -25px -20px;
+  display: flex;
+  flex-direction: column-reverse;
+  color: $white-color;
+  background-color: $dark-color;
+
+  &-copy {
+    font-size: 14px;
+    line-height: 1.8em;
+  }
+
+  &-links {
+    width: 160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+
+    li {
+      line-height: normal;
+    }
+  }
+}

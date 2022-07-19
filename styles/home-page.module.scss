@@ -1,0 +1,34 @@
+@import './variables';
+
+.intro {
+  text-align: center;
+  background-color: $light-bg-color;
+
+  h3 {
+    color: $medium-light-color;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: $dark-color;
+  }
+
+  .mail {
+    margin-top: 80px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

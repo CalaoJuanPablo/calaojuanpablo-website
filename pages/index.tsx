@@ -1,5 +1,5 @@
-import { Head } from '../src/components/head'
-import Image from 'next/image'
+import { HeadSeo } from '../src/components/head-seo'
+import { HomePage } from '../src/pages/home'
 
 export default function Home() {
   const title = 'Juan Pablo Calao | Frontend Developer'
@@ -7,8 +7,9 @@ export default function Home() {
     "I am a Web Developer using NextJS and Node. I don't just write code, but I have aim to understand clients' business models to develop the best solution for end-users."
 
   return (
-    <div>
-      <Head title={title} description={description} />
-    </div>
+    <>
+      <HeadSeo title={title} description={description} />
+      <HomePage />
+    </>
   )
 }
