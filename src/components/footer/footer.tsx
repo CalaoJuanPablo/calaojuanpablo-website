@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import logoImage from '../../../public/calaojuanpablo-logo-full-light-bg.svg'
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
 import styles from 'styles/footer.module.scss'
@@ -12,13 +11,11 @@ export const Footer = () => (
     <div className='container'>
       <p className={styles.handle}>&#64;CalaoJuanPablo</p>
       <div className={styles['footer-info-container']}>
-        <Link href='/'>
-          <figure className={styles['footer-logo-figure']}>
-            <a className={styles['footer-logo-link']}>
-              <Image src={logoImage} alt='CalaoJuanPablo logo' />
-            </a>
-          </figure>
-        </Link>
+        <figure className={styles['footer-logo-figure']}>
+          <a className={styles['footer-logo-link']}>
+            <Image src={logoImage} alt='CalaoJuanPablo logo' />
+          </a>
+        </figure>
         <div className={styles['footer-bottom-info']}>
           <p className={styles['footer-bottom-info-copy']}>
             {year}. Designed with Figma,
