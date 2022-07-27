@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { FaPenNib, FaCode } from 'react-icons/fa'
+import Image from 'next/image'
+import logoImage from '../../../public/calaojuanpablo-logo-full-light-bg.svg'
 import styles from 'styles/home-page.module.scss'
 
 export const HomePage = () => (
@@ -118,6 +120,14 @@ export const HomePage = () => (
           </a>
         </div>
       </div>
+    </section>
+    <section>
+      <p className={styles.handle}>&#64;CalaoJuanPablo</p>
+      <figure className={styles['bottom-logo-figure']}>
+        <a className={styles['footer-logo-link']}>
+          <Image src={logoImage} alt='CalaoJuanPablo logo' />
+        </a>
+      </figure>
     </section>
   </>
 )
