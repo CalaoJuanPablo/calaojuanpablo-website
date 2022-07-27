@@ -56,10 +56,13 @@ export const HomePage = () => (
         </div>
       </div>
     </section>
-    <section id='more-about-me' className='section'>
+    <section
+      id='more-about-me'
+      className={`section ${styles['more-about-me']}`}
+    >
       <div className='container'>
         <h1>want to know more about me?</h1>
-        <ul>
+        <ul className={styles['more-about-me-list']}>
           <li>
             You can check my social media (
             <a
@@ -69,7 +72,7 @@ export const HomePage = () => (
             >
               twitter
             </a>
-            ,
+            ,{' '}
             <a
               href='https://www.linkedin.com/in/calaojuanpablo/'
               target='_blank'
@@ -77,7 +80,7 @@ export const HomePage = () => (
             >
               linkedin
             </a>
-            ,
+            ,{' '}
             <a
               href='https://www.instagram.com/calaojuanpablo/'
               target='_blank'
@@ -88,7 +91,7 @@ export const HomePage = () => (
             ).
           </li>
           <li>
-            Some of my work and interests in code on
+            Some of my work and interests in code on{' '}
             <a
               href='https://github.com/CalaoJuanPablo'
               target='_blank'
@@ -107,17 +110,22 @@ export const HomePage = () => (
             spanish).
           </li>
           <li>
-            If you want to work with me, you can send an email to
-            <a href='mailto:me@calaojuanpablo.com'></a>
+            If you want to work with me, you can send an email to{' '}
+            <a href='mailto:me@calaojuanpablo.com'>me@calaojuanpablo.com</a>
           </li>
         </ul>
-        <div className='buttons'>
-          <a href='#' className='button'>
+        <div className={styles['more-about-me-buttons']}>
+          <a
+            href='mailto:me@calaojuanpablo.com'
+            className={`button ${styles['more-about-me-buttons-single']}`}
+          >
             contact me
           </a>
-          <a href='#' className='button'>
-            go to my blog
-          </a>
+          <Link href='/blog'>
+            <a className={`button ${styles['more-about-me-buttons-single']}`}>
+              go to my blog
+            </a>
+          </Link>
         </div>
       </div>
     </section>

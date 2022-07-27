@@ -65,6 +65,27 @@
   }
 }
 
+.more-about-me {
+  &-list {
+    padding-left: 24px;
+    list-style: initial;
+    margin-bottom: 56px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  &-buttons {
+    max-width: 320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 .handle {
   color: $medium-light-color;
   text-align: center;
