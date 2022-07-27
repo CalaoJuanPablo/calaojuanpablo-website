@@ -36,21 +36,21 @@ export const HomePage = () => (
     <section id='what-i-do' className='section'>
       <div className='container'>
         <h1>what i do</h1>
-        <div className='grid column-2'>
-          <div className='skill-card'>
-            <div className='icon'>
+        <div className={styles['skill-cards']}>
+          <div className={styles['skill-cards-single-card']}>
+            <div className={styles['skill-cards-single-card-icon']}>
               <FaPenNib />
             </div>
             <h3>web design</h3>
-            <span className='border'></span>
+            <span className={styles['skill-cards-single-card-border']}></span>
             <p>I love clean, minimal and beautiful websites</p>
           </div>
-          <div className='skill-card'>
-            <div className='icon'>
+          <div className={styles['skill-cards-single-card']}>
+            <div className={styles['skill-cards-single-card-icon']}>
               <FaCode />
             </div>
             <h3>web development</h3>
-            <span className='border'></span>
+            <span className={styles['skill-cards-single-card-border']}></span>
             <p>I focus in simplicity, reliability and performance</p>
           </div>
         </div>
