@@ -16,45 +16,41 @@ export const NavBar = () => {
         <nav className={styles.navbar}>
           <ul>
             <li>
-              <Link href='/'>
-                <a
-                  className={pathname === '/' ? styles['active-nav-link'] : ''}
-                >
-                  Home
-                </a>
+              <Link
+                href='/'
+                className={pathname === '/' ? styles['active-nav-link'] : ''}
+              >
+                Home
               </Link>
             </li>
             <li>
-              <Link href='/about'>
-                <a
-                  className={
-                    pathname === '/about' ? styles['active-nav-link'] : ''
-                  }
-                >
-                  About
-                </a>
+              <Link
+                href='/about'
+                className={
+                  pathname === '/about' ? styles['active-nav-link'] : ''
+                }
+              >
+                About
               </Link>
             </li>
             <li>
-              <Link href='/work'>
-                <a
-                  className={
-                    pathname === '/work' ? styles['active-nav-link'] : ''
-                  }
-                >
-                  Work
-                </a>
+              <Link
+                href='/work'
+                className={
+                  pathname === '/work' ? styles['active-nav-link'] : ''
+                }
+              >
+                Work
               </Link>
             </li>
             <li>
-              <Link href='/blog'>
-                <a
-                  className={
-                    pathname === '/blog' ? styles['active-nav-link'] : ''
-                  }
-                >
-                  Blog (es)
-                </a>
+              <Link
+                href='/blog'
+                className={
+                  pathname === '/blog' ? styles['active-nav-link'] : ''
+                }
+              >
+                Blog (es)
               </Link>
             </li>
           </ul>

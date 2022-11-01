@@ -27,8 +27,8 @@ export const HomePage = () => (
           apps and sites I build. Very passionate about learning and teaching.
         </p>
         <div className={styles['more-about-link']}>
-          <Link href='/about'>
-            <a className='button'>more about me</a>
+          <Link href='/about' className='button'>
+            more about me
           </Link>
         </div>
       </div>
@@ -102,12 +102,8 @@ export const HomePage = () => (
             .
           </li>
           <li>
-            Read my personal{' '}
-            <Link href='.blog'>
-              <a>blog</a>
-            </Link>{' '}
-            (sorry for non spanish speakers 😔. For now it will only be in
-            spanish).
+            Read my personal <Link href='.blog'>blog</Link> (sorry for non
+            spanish speakers 😔. For now it will only be in spanish).
           </li>
           <li>
             If you want to work with me, you can send an email to{' '}
@@ -121,10 +117,11 @@ export const HomePage = () => (
           >
             contact me
           </a>
-          <Link href='/blog'>
-            <a className={`button ${styles['more-about-me-buttons-single']}`}>
-              go to my blog
-            </a>
+          <Link
+            href='/blog'
+            className={`button ${styles['more-about-me-buttons-single']}`}
+          >
+            go to my blog
           </Link>
         </div>
       </div>
