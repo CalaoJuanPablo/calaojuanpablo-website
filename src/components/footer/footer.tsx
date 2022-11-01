@@ -9,9 +9,16 @@ export const Footer = () => (
     <div className='container'>
       <div className={styles['footer-bottom-info']}>
         <p className={styles['footer-bottom-info-copy']}>
-          {year}. Designed with Figma,
+          {year}. Designed with{' '}
+          <a href='https://www.figma.com/' target='_blank' rel='noreferrer'>
+            Figma
+          </a>
+          ,
           <br />
-          built with <a href='https://nextjs.org'>NextJS</a>
+          built with{' '}
+          <a href='https://nextjs.org' target='_blank' rel='noreferrer'>
+            NextJS
+          </a>
         </p>
         <ul className={styles['footer-bottom-info-links']}>
           <li>
