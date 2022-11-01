@@ -1,7 +1,6 @@
 @import './variables';
 
 .intro {
-  text-align: center;
   background-color: $light-bg-color;
 
   h3 {
@@ -15,6 +14,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 1;
+    text-align: left;
   }
 
   h4 {
