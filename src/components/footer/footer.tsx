@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
+import { CjpLogo } from '../cjp-logo'
 import styles from 'styles/footer.module.scss'
 
 const date = Date.now()
@@ -8,6 +9,9 @@ export const Footer = () => (
   <footer className={styles.footer}>
     <div className='container'>
       <div className={styles['footer-bottom-info']}>
+        <div className={styles['footer-bottom-info-logo']}>
+          <CjpLogo />
+        </div>
         <p className={styles['footer-bottom-info-copy']}>
           {year}. Designed with{' '}
           <a href='https://www.figma.com/' target='_blank' rel='noreferrer'>
