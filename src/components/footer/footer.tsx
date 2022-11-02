@@ -1,6 +1,6 @@
 import { FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa'
 import { CjpLogo } from '../cjp-logo'
-import styles from 'styles/footer.module.scss'
+import styles from './footer.module.scss'
 
 const date = Date.now()
 const year = new Date(date).getFullYear()

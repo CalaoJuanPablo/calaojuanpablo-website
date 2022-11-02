@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import logoImage from 'public/calaojuanpablo-logo-full-light-bg.svg'
-import styles from 'styles/nav-bar.module.scss'
+import styles from './nav-bar.module.scss'
 
 export const NavBar = () => {
   const { pathname } = useRouter()
